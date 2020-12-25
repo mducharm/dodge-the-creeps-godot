@@ -79,7 +79,7 @@ public class Player : Area2D
 		
 	}
 
-	public void OnPlayerBodyEntered()
+	public void OnPlayerBodyEntered(PhysicsBody2D body)
 	{
 		Hide();
 		EmitSignal("Hit");
