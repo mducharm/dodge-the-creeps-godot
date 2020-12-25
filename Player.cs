@@ -79,18 +79,18 @@ public class Player : Area2D
 		
 	}
 
-    public void OnPlayerBodyEntered()
-    {
-        Hide();
-        EmitSignal("Hit");
-        GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred("disabled", true);
-    }
+	public void OnPlayerBodyEntered()
+	{
+		Hide();
+		EmitSignal("Hit");
+		GetNode<CollisionShape2D>("CollisionShape2D").SetDeferred("disabled", true);
+	}
 
-    public void Start(Vector2 pos)
-    {
-        Position = pos;
-        Show();
-        GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
-    }
+	public void Start(Vector2 pos)
+	{
+		Position = pos;
+		Show();
+		GetNode<CollisionShape2D>("CollisionShape2D").Disabled = false;
+	}
 }
 
