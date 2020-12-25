@@ -3,9 +3,6 @@ using System;
 
 public class Mob : RigidBody2D
 {
-	// Declare member variables here. Examples:
-	// private int a = 2;
-	// private string b = "text";
 	
 	[Export]
 	public int MinSpeed = 150;
@@ -22,10 +19,10 @@ public class Mob : RigidBody2D
 		animSprite.Animation = mobTypes[_random.Next(0, mobTypes.Length)];
 	}
 
-    public void OnVisibilityNotifier2DScreenExited()
-    {
+	public void OnVisibilityNotifier2DScreenExited()
+	{
 
-    }
+	}
 }
 
 
